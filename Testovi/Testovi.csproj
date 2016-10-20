@@ -59,6 +59,7 @@
     <Compile Include="TestForVsWhile.cs" />
     <Compile Include="TestGrananjaIf.cs" />
     <Compile Include="TestGrananjaSwitch.cs" />
+    <Compile Include="TestMetodaProširenja.cs" />
     <Compile Include="TestNaredbeBreakContinue.cs" />
     <Compile Include="TestPetljeWhileDoWhile.cs" />
     <Compile Include="TestUsporedbeRealnihBrojeva.cs" />
@@ -84,6 +85,10 @@
     <ProjectReference Include="..\GrananjeSwitch\GrananjeSwitch.csproj">
       <Project>{64dfb018-3634-4a83-8410-fa0109db5935}</Project>
       <Name>GrananjeSwitch</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MetodeProširenja\MetodeProširenja.csproj">
+      <Project>{ac9a5a1b-07a6-4214-a1d3-6aef29d8c53e}</Project>
+      <Name>MetodeProširenja</Name>
     </ProjectReference>
     <ProjectReference Include="..\NaredbeBreakContinue\NaredbeBreakContinue.csproj">
       <Project>{952b5dd4-2adf-488d-bb60-4175e47c38d8}</Project>
