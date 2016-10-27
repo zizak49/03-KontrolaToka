@@ -25,7 +25,10 @@ namespace Vsite.CSharp
 
         public static bool JednakiSu(double broj1, double broj2)
         {
-            return broj1 == broj2;
+            long l1 = BitConverter.DoubleToInt64Bits(broj1);
+            long l2 = BitConverter.DoubleToInt64Bits(broj2);
+
+            return Math.Abs(l1 - l2) < 4;
         }
     }
 }

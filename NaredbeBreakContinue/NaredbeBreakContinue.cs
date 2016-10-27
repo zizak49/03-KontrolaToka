@@ -9,9 +9,10 @@ namespace Vsite.CSharp
             int zbroj = 0;
             for (int i = 1; i <= n; ++i)
             {
-                // TODO: Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje naredbom continue)
-
-                zbroj += i;
+                //  Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje naredbom continue)
+                if (i % d != 0)
+                    continue;              
+                 zbroj += i;
             }
             return zbroj;
         }
@@ -21,13 +22,15 @@ namespace Vsite.CSharp
             int zbroj = 0;
             for (int i = 1; i <= n; ++i)
             {
-                // TODO: Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
-
-
-                // TODO: Ako je i djeljiv sa d2, tada treba prekinuti petlju
-
+                //  Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+                if (i % d != 0)
+                    continue;
+                //  Ako je i djeljiv sa d2, tada treba prekinuti petlju
+                if (i % d2 == 0)
+                    break;
 
                 zbroj += i;
+
             }
             return zbroj;
         }
